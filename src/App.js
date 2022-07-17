@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+import styled from 'styled-components';
 
-function App() {
+import { Home } from "./pages";
+import { Nav } from "./components"
+
+const MainContainer = styled.div`
+  display: grid;
+  grid-template-rows: 100px calc(100vh - 100px);
+`;
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <MainContainer>
+        <Nav />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </MainContainer>
+    </Router>
   );
 }
 
