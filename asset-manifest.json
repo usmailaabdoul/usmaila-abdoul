@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/usmaila-abdoul/static/css/main.7a64b1f3.css",
+    "main.js": "/usmaila-abdoul/static/js/main.2512deb5.js",
+    "static/media/me.png": "/usmaila-abdoul/static/media/me.93ab4e0e6c6fe683ea17.png",
+    "static/media/logo.svg": "/usmaila-abdoul/static/media/logo.af02453b61db8f3d3af62193ffecd769.svg",
+    "index.html": "/usmaila-abdoul/index.html",
+    "main.7a64b1f3.css.map": "/usmaila-abdoul/static/css/main.7a64b1f3.css.map",
+    "main.2512deb5.js.map": "/usmaila-abdoul/static/js/main.2512deb5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a64b1f3.css",
+    "static/js/main.2512deb5.js"
+  ]
+}
