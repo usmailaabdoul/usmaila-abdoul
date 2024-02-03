@@ -14,48 +14,53 @@ export const Experience = () => {
 
 const experience = [
   {
-    title: "Google",
-    position: "Software Engineer",
-    time: "2022 - Present",
-    location: "Atlanta",
+    title: "GitStart Community (YC S19)",
+    position: "Project Manager & Software Engineer",
+    time: "2021 - Present",
+    location: "Global · Remote",
     description:
-      "I help build and scale Google Photos. Increased throughput of our primary services by 70%. Migrated backend service from Java to Go. Also helped make it look prettier.",
+      `Lead a team of 6 developers to successfully build and ship features for a software project, using the latest of NextJS App 
+      router and React for efficient server-side and client-side rendering, and building performant 
+      API endpoints with Express and NestJS, with relational and non relation databases`,
     tech: [
-      "Angular",
-      "Python",
-      "GCP",
-      "Git",
+      "React",
+      "NextJS",
+      "React Native",
+      "Typescript",
       "GitHub",
-      "Java",
-      "Golang",
-      "K8s",
+      "NodeJS",
+      "Express",
+      "MongoDB",
+      "Postgres",
     ],
   },
   {
-    title: "Facebook",
-    position: "Software Engineer",
-    time: "2020 - 2022",
-    location: "San Francisco",
+    title: "The Sports Media Agency",
+    position: "Frontend Developer",
+    time: "2022 - 2024",
+    location: "London · Remote",
     description:
-      "Senior Full Stack Engineer for Facebook Marketplace. Created a service from scratch to handle new listings. Also played some ping pong. It was fun.",
-    tech: ["React", "Node", "PHP", "GraphQL", "Presto", "Cassandra"],
+      `Utilized the latest Angular version to enhance sports media agency websites, boosting performance by up to 20% through methods 
+      like server-side rendering and pre-rendering in Angular Universal, while implementing unique features and ensuring code quality 
+      through rigorous testing and peer code reviews.`,
+    tech: ["Angular", "Typescript", "Figma", "GraphQL"],
   },
   {
-    title: "Amazon",
-    position: "Software Engineer",
-    time: "2016 - 2020",
-    location: "Seattle",
+    title: "Digital Renter",
+    position: "Frontend Developer",
+    time: "2019 - 2021",
+    location: "Buea, Southwest, Cameroon · On-site",
     description:
-      "Data Engineer for store front. Built data pipelines with Spark and Airflow. Saw Bezos one time. He said he liked my paintings. I said I liked his hair.",
+      `Developed and launched the Digital Rental cross-platform mobile application, achieving over 1000 downloads on the Play Store, 
+      also build a Facebook Messenger bot with NodeJS to reduce customer service costs and time by 25%, driving more traffic to the website, and enable 
+      customer property requests without assistance, alongside designing and building cross-platform applications using React Native,
+       while providing coaching and support to colleagues.`,
     tech: [
-      "Java",
-      "Python",
-      "S3",
-      "RDS",
-      "Redshift",
-      "PySpark",
-      "HDFS",
-      "Apache Airflow",
+      "React",
+      "React Native",
+      "Redux",
+      "Figma",
+      "Node",
     ],
   },
 ];
