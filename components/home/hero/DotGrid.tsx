@@ -48,11 +48,19 @@ export const DotGrid = () => {
   }
 
   return (
-    <div
-      style={{ gridTemplateColumns: `repeat(${GRID_WIDTH}, 1fr)` }}
-      className={styles.dotGrid}
-    >
-      {dots.map((dot) => dot)}
-    </div>
+    <>
+      <div
+        style={{ gridTemplateColumns: `repeat(${GRID_WIDTH}, 1fr)` }}
+        className={styles.dotGrid}
+      >
+        {dots.map((dot) => dot)}
+      </div>
+      {/* <div className="relative flex flex-1 flex-col space-y-8">
+        <div className="absolute flex flex-col md:flex-row justify-center -mt-[500px] md:-mt-[400px] ml-52 md:ml-16 w-full">
+          <div className="bg-[#1C9FE9] w-56 h-56 md:w-96 md:h-96 rounded-full blur-[80px] md:blur-[90px] mr-32 opacity-80"></div>
+          <div className="bg-[#7000FF] w-56 h-56 md:w-96 md:h-96 rounded-full blur-[70px] md:blur-[80px] mt-12 opacity-60"></div>
+        </div>
+      </div> */}
+    </>
   );
 };
