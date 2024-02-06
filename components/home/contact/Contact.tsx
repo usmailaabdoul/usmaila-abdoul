@@ -30,11 +30,11 @@ export const Contact = () => {
               </Link>{" "}
               if that&apos;s more your speed.
             </p>
-            <div style={{marginTop: '2.4rem'}} className={styles.AiFillContacts}>
-              <AiFillPhone size="2rem" />
+            <div style={{marginTop: '2.4rem'}} className={styles.contactEmail}>
+              <AiFillContacts size="2rem" />
               <p style={{fontSize: '15px'}}>Usmaila Abdoul Moumini</p>
             </div>
-            <div style={{marginTop: '2.4rem'}} className={styles.contactEmail}>
+            <div style={{marginTop: '5px'}} className={styles.contactEmail}>
               <AiFillPhone size="2rem" />
               <p style={{fontSize: '15px'}}>+237 691 21 21 73</p>
             </div>
