@@ -1,3 +1,5 @@
+'use client'
+
 import styles from "./headinglinks.module.scss";
 import {
   AiFillLinkedin,

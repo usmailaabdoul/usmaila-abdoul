@@ -1,14 +1,15 @@
+'use client';
+
 import { MouseEventHandler } from "react";
 import styles from "./standardbutton.module.scss";
 
-interface Props {
+interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: string | JSX.Element;
-  onClick?: MouseEventHandler<HTMLButtonElement>;
 }
 
-export const StandardButton = ({ children, onClick }: Props) => {
+export const StandardButton = ({ children, ...props }: Props) => {
   return (
-    <button onClick={onClick} className={styles.standardButton}>
+    <button className={styles.standardButton} {...props}>
       {children}
     </button>
   );

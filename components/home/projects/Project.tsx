@@ -1,3 +1,5 @@
+'use client'
+
 import { Reveal } from "@/components/utils/Reveal";
 import { useAnimation, useInView, motion } from "framer-motion";
 import Link from "next/link";

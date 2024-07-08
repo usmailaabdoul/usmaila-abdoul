@@ -1,3 +1,5 @@
+'use client'
+
 import { useEffect, useState } from "react";
 import styles from "./sidebar.module.scss";
 import { motion } from "framer-motion";
