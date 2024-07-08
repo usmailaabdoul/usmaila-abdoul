@@ -3,9 +3,12 @@
 import { useEffect, useState } from "react";
 import styles from "./sidebar.module.scss";
 import { motion } from "framer-motion";
+import { usePathname } from 'next/navigation'
+import Link from "next/link";
 
 export const SideBar = () => {
   const [selected, setSelected] = useState("");
+  const pathname = usePathname()
 
   useEffect(() => {
     const sections = document.querySelectorAll(".section-wrapper");
@@ -41,7 +44,16 @@ export const SideBar = () => {
         initial={{ x: -70 }}
         animate={{ x: 0 }}
         transition={{ duration: 0.5, delay: 0.1 }}
-        href="#about"
+        href="/blog"
+        className={pathname === "/blog" ? styles.selected : ""}
+      >
+        Blog
+      </motion.a>
+      <motion.a
+        initial={{ x: -70 }}
+        animate={{ x: 0 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        // href="/#about"
         onClick={() => {
           setSelected("about");
         }}
@@ -63,7 +75,7 @@ export const SideBar = () => {
         initial={{ x: -70 }}
         animate={{ x: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
-        href="#experience"
+        href="/#experience"
         onClick={() => setSelected("experience")}
         className={selected === "experience" ? styles.selected : ""}
       >
@@ -73,7 +85,7 @@ export const SideBar = () => {
         initial={{ x: -70 }}
         animate={{ x: 0 }}
         transition={{ duration: 0.5, delay: 0.4 }}
-        href="#contact"
+        href="/#contact"
         onClick={() => setSelected("contact")}
         className={selected === "contact" ? styles.selected : ""}
       >
