@@ -11,7 +11,7 @@ interface Props {
   setIsOpen: Function;
   title: string;
   imgSrc: string;
-  code: string;
+  code?: string;
   projectLink: string;
   tech: string[];
   modalContent: JSX.Element;
@@ -65,9 +65,11 @@ export const ProjectModal = ({
               Project Links<span>.</span>
             </p>
             <div className={styles.links}>
-              <Link target="_blank" rel="nofollow" href={code}>
-                <AiFillGithub /> source code
-              </Link>
+              {code && (
+                <Link target="_blank" rel="nofollow" href={code}>
+                  <AiFillGithub /> source code
+                </Link>
+              )}
               <Link target="_blank" rel="nofollow" href={projectLink}>
                 <AiOutlineExport /> live project
               </Link>

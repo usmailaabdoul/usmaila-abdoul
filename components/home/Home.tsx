@@ -13,7 +13,7 @@ export const Home = () => {
     <>
       <Hero />
       <About />
-      {/* <Projects /> */}
+      <Projects />
       <Experience />
       <Contact />
       <div

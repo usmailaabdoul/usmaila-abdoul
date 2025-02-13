@@ -18,36 +18,27 @@ export const Projects = () => {
 
 const projects = [
   {
-    title: "Paint.app",
-    imgSrc: "project-imgs/example-project.jpg",
-    code: "https://www.github.com",
-    projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    tech: ["Flutter", "MUI", "Python", "FastAPI"],
+    title: "Touch of Grace Cleaning Service",
+    imgSrc: "project-imgs/touchofgrace.png",
+    // code: "https://www.github.com",
+    projectLink: "https://www.touchofgracecleaningservices.com/",
+    tech: ["Next.js", "Tailwind", "Shadcn", "Typescript", "Google Analytics"],
     description:
-      "A real-time coaching app for students learning to paint. This app is my baby, designed and built on my own.",
+      "A Website for a cleaning service based in Texas, showcasing their services, the entier website was built by me.",
     modalContent: (
       <>
         <p>
-          Pain.app is a real-time coaching app for students learning to paint.
-          This app is my baby, designed and built on my own.
+          Touch of Grace is a cleaning company based in Texas and this website is built to showcases their services 
+          and offering including the different programs they offer. We also intergrate and API endpoint to track user quate requests 
+          through a custom CSM built specifically for this website, it collects basic user information including the type of service they
+          are interested in and submits this to the CSM which handles sending the appropraite emails to users.
         </p>
         <p>
-          The tech stack is based on top of Flutter for the mobile app,
-          connected to a Python & FastAPI backend, with data stored in Postgres,
-          deployed on Heroku.
+          I also use google analytics to see how users interact with the website and how users that visit the website actually request a quote and complete the requests.
         </p>
         <p>
-          Because this isn&apos;t real, here&apos;s some gibberish to fill space{" "}
-          {":)"}
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-          quia officia odio nulla consectetur aperiam ad tempora magni magnam
-          nesciunt.
-        </p>
-        <p>
-          Fuga id sapiente facere ipsa eius exercitationem officiis deleniti,
-          rerum dolorum. Deserunt soluta modi culpa animi.
+          This website was built to be very user friend and responsive and all devices, other perfomance improvements like lazy loading images and using SSR to load pages
+          and services before initial page mount making sure there is no loading and delays improving overall user experience while navigating the website.
         </p>
       </>
     ),
