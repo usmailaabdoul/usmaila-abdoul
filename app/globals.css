@@ -3,22 +3,24 @@
 @tailwind utilities;
 
 :root {
-  font-size: 62.5%;
+  --background: 0 0% 3.9%;
+  --foreground: 0 0% 98%;
+  /* font-size: 62.5%; */
 
-  --background: rgb(17, 17, 17);
+  --background: rgb(0, 0, 0);
   --bg-opaque: rgb(17, 17, 17, 0.25);
   --background-light: rgb(35, 35, 35);
   --background-dark: rgb(8, 8, 8);
 
-  --text: rgb(235, 236, 243);
+  --text: #EDEDED;
   --brand: rgb(10, 255, 157);
 
-  --text-xs: 1.6rem;
+  /* --text-xs: 1.6rem;
   --text-sm: 1.8rem;
   --text-md: 2.2rem;
   --text-lg: 3.6rem;
   --text-xl: 5.6rem;
-  --text-2xl: 7.6rem;
+  --text-2xl: 7.6rem; */
 }
 
 * {
@@ -49,7 +51,7 @@ a {
   text-decoration: none;
 }
 
-.section-wrapper {
+/* .section-wrapper {
   position: relative;
   z-index: 10;
   max-width: 1150px;
@@ -69,7 +71,7 @@ a {
   background: var(--background-light);
   padding: 0.2rem 0.8rem;
   border-radius: 999px;
-}
+} */
 
 @keyframes float-square {
   0% {
