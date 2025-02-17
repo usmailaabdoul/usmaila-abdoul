@@ -12,7 +12,7 @@ export default function Box({
 }) {
   return (
     <div className={cn(
-      'border-[1.5px] border-[#242424] relative flex',
+      'border-[1.5px] border-[#242424] relative flex flex-col',
       className
     )}>
       {crossPosition?.includes('top-left') && (

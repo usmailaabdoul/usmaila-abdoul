@@ -4,15 +4,12 @@ import Box from "@/components/ui/box";
 import { Button } from "@/components/ui/button";
 import Container from "@/components/ui/container";
 import { FaGithub, FaLinkedin, FaXTwitter, FaGoogle, FaFileArrowDown } from "react-icons/fa6";
+import Footer from "@/components/footer";
 
 
 export default function home() {
-  const year = new Date().getFullYear();
-
   return (
     <>
-      <Header />
-      <div className="mt-44"></div>
       <div className="flex flex-col items-center">
         <Container className="">
           {/* Hero */}
@@ -22,8 +19,8 @@ export default function home() {
           >
             <div className="absolute inset-0" style={{ 
               backgroundImage: `
-                linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px)
+                linear-gradient(to right, #1F1F1F 1.5px, transparent 1px),
+                linear-gradient(to bottom, #1F1F1F 1.5px, transparent 1px)
               `,
               backgroundSize: '108px 111px'
             }} />
@@ -50,7 +47,7 @@ export default function home() {
               </div>
               
               <div className="relative w-64 h-64 z-10">
-                <div className="absolute inset-0 backdrop-blur-sm rounded-lg overflow-hidden">
+                <div className="absolute inset-0 backdrop-blur-sm overflow-hidden">
                   <img 
                     src="/usmaila.png" 
                     alt="placeholder" 
@@ -78,11 +75,11 @@ export default function home() {
           <Box className="p-5 border-t-0 border-b-0"><div/></Box>
 
           {/* Recent Activity */}
-          <Box crossPosition={['top-left']} className="w-full">
+          <Box crossPosition={['top-left']} className="w-full flex-row">
             <Box className="p-10 w-1/3 border-t-0 border-b-0 border-l-0 border-r-0">
               <h2 className="text-4xl">Recent Activity</h2>
             </Box>
-            <Box className="p-10 w-2/3 border-t-0 border-b-0 border-r-0 gap-5 flex-wrap">
+            <Box className="p-10 w-2/3 border-t-0 border-b-0 border-r-0 gap-5 flex-wrap flex-row">
               <Box className="flex w-[198px] h-52 p-5">LinkedIn message</Box>
               <Box className="flex w-[198px] h-52 p-5">LinkedIn message</Box>
               <Box className="flex w-[198px] h-52 p-5">LinkedIn message</Box>
@@ -90,7 +87,7 @@ export default function home() {
           </Box>
 
           {/* Experience */}
-          <Box className="border-t-0 border-b-0">
+          <Box className="flex-row border-t-0 border-b-0">
             <Box className="p-10 flex-1 border-t-0 border-b-0 border-l-0 border-r-0">
               <div className="text-4xl">Experience</div>
             </Box>
@@ -102,8 +99,8 @@ export default function home() {
           <Box className="h-auto border-t-0 border-b-0 flex-col gap-10">
             <div className="absolute inset-0" style={{ 
               backgroundImage: `
-                linear-gradient(to right, rgba(255, 255, 255, 0.08) 1.5px, transparent 1px),
-                linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1.5px, transparent 1px)
+                linear-gradient(to right, #1F1F1F 1.5px, transparent 1px),
+                linear-gradient(to bottom, #1F1F1F 1.5px, transparent 1px)
               `,
               backgroundSize: '360px 100%'
             }} />
@@ -180,8 +177,8 @@ export default function home() {
           <Box crossPosition={['bottom-right']} className="p-10 h-[532px] border-t-0 border-b-0">
             <div className="absolute inset-0 -z-10" style={{ 
                 backgroundImage: `
-                  linear-gradient(to right, rgba(255, 255, 255, 0.08) 1.5px, transparent 1px),
-                  linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1.5px, transparent 1px)
+                  linear-gradient(to right, #1F1F1F 1.5px, transparent 1px),
+                  linear-gradient(to bottom, #1F1F1F 1.5px, transparent 1px)
                 `,
                 backgroundSize: '360px 100%'
               }} />
@@ -199,8 +196,8 @@ export default function home() {
           <Box className="py-44 border-t-0 flex-col items-center">
             <div className="absolute inset-0" style={{ 
                 backgroundImage: `
-                  linear-gradient(to right, rgba(255, 255, 255, 0.08) 1.5px, transparent 1px),
-                  linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1.5px, transparent 1px)
+                  linear-gradient(to right, #1F1F1F 1.5px, transparent 1px),
+                  linear-gradient(to bottom, #1F1F1F 1.5px, transparent 1px)
                 `,
                 backgroundSize: '360px 100%'
               }} />
@@ -243,17 +240,7 @@ export default function home() {
             </div>
           </Box>
 
-          {/* Footer */}
-          <Box crossPosition={['top-left', 'top-right']} className="border-t-0">
-            <Box className="w-1/2 border-t-0 border-b-0 border-l-0 border-r-0 p-5 justify-center items-center gap-4">
-              <Button variant='link'>About</Button>
-              <Button variant='link'>Articles</Button>
-              <Button variant='link'>Projects</Button>
-            </Box>
-            <Box className="w-1/2 border-t-0 border-b-0 border-r-0 p-5 justify-center items-center">
-              <p>© {year} Usmaila Abdoul. All rights reserved.</p>
-            </Box>
-          </Box>
+          <Footer />
         </Container>
       </div>
     </>
