@@ -2,6 +2,9 @@ import React from 'react'
 import Container from '@/components/ui/container'
 import Box from '@/components/ui/box'
 import Footer from '@/components/footer'
+import Link from 'next/link'
+import { Button } from '@/components/ui/button'
+import { FaGithub, FaGoogle, FaLinkedin, FaXTwitter } from 'react-icons/fa6'
 
 export default function page() {
   return (
@@ -15,8 +18,22 @@ export default function page() {
             `,
             backgroundSize: '108px 95px'
           }} />
-          <div className='bg-black h-[188px] w-[calc(100%_-_215px)] absolute top-[50.5%] left-[50.25%] transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center'>
-            <h1 className="text-4xl">About</h1>
+          <div className='bg-black h-[188px] w-[calc(100%_-_215px)] absolute top-[50.5%] left-[50.25%] transform -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center'>
+            <h1 className="text-5xl">About</h1>
+            <div className="flex gap-4 justify-center mt-4 relative z-10">
+              <Link href="https://www.linkedin.com/in/usmaila-abdoul" target="_blank" rel="nofollow" className='h-full'>
+                <Button variant='secondary' size='icon' className='rounded-full [&_svg]:size-5'><FaLinkedin /></Button>
+              </Link>
+              <Link href="https://x.com/Abdoul_usma_ila" target="_blank" rel="nofollow" className='h-full'>
+                <Button variant='secondary' size='icon' className='rounded-full [&_svg]:size-5'><FaXTwitter /></Button>
+              </Link>
+              <Link href="https://www.github.com/usmailaabdoul" target="_blank" rel="nofollow" className='h-full'>
+                <Button variant='secondary' size='icon' className='rounded-full [&_svg]:size-5'><FaGithub /></Button>
+              </Link>
+              <Link href="/about" className='h-full'>
+                <Button variant='secondary' size='icon' className='rounded-full [&_svg]:size-5'><FaGoogle /></Button>
+              </Link>
+            </div>
           </div>
         </Box>
         <Box className='border-t-0 flex-row'>
