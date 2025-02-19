@@ -13,7 +13,7 @@ export default function Container({
     )}>
       <div className={cn(
         // 'w-[clamp(250px,100vw,1080px)]',
-        'w-[clamp(calc(250px_-_1px),calc(100vw_-_1px_-_(2rem_*_2)),calc(1080px_-_1px))]',
+        'w-[clamp(calc(250px_-_1px),calc(100vw_-_1px_-_(2rem_*_2)),calc(1200px_-_2px))]',
         childClassName
       )}>{children}</div>
     </div>
