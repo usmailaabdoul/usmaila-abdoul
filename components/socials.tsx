@@ -12,7 +12,7 @@ export default function Socials({ className }: { className?: string }) {
           <Button variant='secondary' size='icon' 
             className={cn(
               'rounded-full [&_svg]:size-5',
-              'bg-background-4 text-foreground-6 dark:bg-background-4 dark:text-foreground-6 hover:bg-background-4/80'
+              'bg-background-4 text-foreground-6 hover:bg-background-4 hover:opacity-85'
             )}
           ><FaLinkedin /></Button>
         </Link>
@@ -20,7 +20,7 @@ export default function Socials({ className }: { className?: string }) {
           <Button variant='secondary' size='icon' 
             className={cn(
               'rounded-full [&_svg]:size-5',
-              'bg-background-4 text-foreground-6 dark:bg-background-4 dark:text-foreground-6 hover:bg-background-4/80'
+              'bg-background-4 text-foreground-6 hover:bg-background-4 hover:opacity-85'
             )}
           ><FaXTwitter /></Button>
         </Link>
@@ -28,7 +28,7 @@ export default function Socials({ className }: { className?: string }) {
           <Button variant='secondary' size='icon' 
             className={cn(
               'rounded-full [&_svg]:size-5',
-              'bg-background-4 text-foreground-6 dark:bg-background-4 dark:text-foreground-6 hover:bg-background-4/80'
+              'bg-background-4 text-foreground-6 hover:bg-background-4 hover:opacity-85'
             )}
           ><FaGithub /></Button>
         </Link>
@@ -36,7 +36,7 @@ export default function Socials({ className }: { className?: string }) {
           <Button variant='secondary' size='icon' 
             className={cn(
               'rounded-full [&_svg]:size-5',
-              'bg-background-4 text-foreground-6 dark:bg-background-4 dark:text-foreground-6 hover:bg-background-4/80'
+              'bg-background-4 text-foreground-6 hover:bg-background-4 hover:opacity-85'
             )}
           ><FaGoogle /></Button>
         </Link>

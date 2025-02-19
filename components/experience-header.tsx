@@ -16,7 +16,7 @@ export default function ExperienceHeader({ className }: {className?: string}) {
           <Button
             onClick={() => window.open("/Usmaila_Abdoul_-_Software_Engineer.pdf")}
             variant={'secondary'}
-            className='bg-background-4 text-foreground-6 dark:bg-background-4 dark:text-foreground-6 hover:bg-background-4/80'
+            className='bg-background-4 text-foreground-6 hover:bg-background-4 hover:opacity-85'
             >Download CV <FaFileArrowDown />
           </Button>
         </Box>
