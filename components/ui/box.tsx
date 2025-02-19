@@ -12,31 +12,31 @@ export default function Box({
 }) {
   return (
     <div className={cn(
-      'border-[1.5px] border-[#242424] relative flex flex-col',
+      'border-[1.5px] border-border-2 relative flex flex-col',
       className
     )}>
       {crossPosition?.includes('top-left') && (
         <div className="w-fit h-fit absolute z-[2] inset-[-11.5px]">
-          <div className="w-[11.5px] h-[21px] absolute border-r border-[#878787]"/>
-          <div className="h-[11.5px] w-[21px] absolute border-b border-[#878787]"/>
+          <div className="w-[11.5px] h-[21px] absolute border-r border-cross"/>
+          <div className="h-[11.5px] w-[21px] absolute border-b border-cross"/>
         </div>
       )}
       {crossPosition?.includes('top-right') && (
         <div className="w-fit h-fit absolute left-[calc(100%_-_10.5px)] z-[2] inset-[-11.5px]">
-          <div className="w-[11.5px] h-[21px] absolute border-r border-[#878787]"/>
-          <div className="h-[11.5px] w-[21px] absolute border-b border-[#878787]"/>
+          <div className="w-[11.5px] h-[21px] absolute border-r border-cross"/>
+          <div className="h-[11.5px] w-[21px] absolute border-b border-cross"/>
         </div>
       )}
       {crossPosition?.includes('bottom-left') && (
       <div className="w-fit h-fit absolute top-[calc(100%_-_10.5px)] z-[2] inset-[-11.5px]">
-        <div className="w-[11.5px] h-[21px] absolute border-r border-[#878787]"/>
-        <div className="h-[11.5px] w-[21px] absolute border-b border-[#878787]"/>
+        <div className="w-[11.5px] h-[21px] absolute border-r border-cross"/>
+        <div className="h-[11.5px] w-[21px] absolute border-b border-cross"/>
       </div>
       )}
       {crossPosition?.includes('bottom-right') && (
         <div className="w-fit h-fit absolute top-[calc(100%_-_10.5px)] left-[calc(100%_-_10.5px)] z-[2] inset-[-11.5px]">
-          <div className="w-[11.5px] h-[21px] absolute border-r border-[#878787]"/>
-          <div className="h-[11.5px] w-[21px] absolute border-b border-[#878787]"/>
+          <div className="w-[11.5px] h-[21px] absolute border-r border-cross"/>
+          <div className="h-[11.5px] w-[21px] absolute border-b border-cross"/>
         </div>
       )}
       {children}

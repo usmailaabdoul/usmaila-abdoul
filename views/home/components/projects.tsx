@@ -14,7 +14,7 @@ export default function Projects() {
           </div>
         </Box>
         <Box className="relative md:col-[2_/_4] col-span-1 py-10 pr-10 gap-10 border-0 grid grid-cols-2">
-          <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 h-full border-[1.5px] border-t-0 border-l-0 border-b-0 border-[#242424]"/>
+          <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 h-full border-[1.5px] border-t-0 border-l-0 border-b-0 border-border-2"/>
           {PROJECTS.map((project) => (
             <ProjectCard key={project.id} {...project} />
           ))}

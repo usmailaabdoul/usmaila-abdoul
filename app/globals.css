@@ -5,7 +5,6 @@
 :root {
   --background: 0 0% 3.9%;
   --foreground: 0 0% 98%;
-  /* font-size: 62.5%; */
 
   --background: rgb(0, 0, 0);
   --bg-opaque: rgb(17, 17, 17, 0.25);
@@ -15,12 +14,6 @@
   --text: #EDEDED;
   --brand: rgb(10, 255, 157);
 
-  /* --text-xs: 1.6rem;
-  --text-sm: 1.8rem;
-  --text-md: 2.2rem;
-  --text-lg: 3.6rem;
-  --text-xl: 5.6rem;
-  --text-2xl: 7.6rem; */
 }
 
 * {
@@ -42,36 +35,14 @@ body {
 }
 
 body {
-  color: var(--text);
-  background: var(--background);
+  color: var(--foreground2);
+  background: var(--background2);
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
-
-/* .section-wrapper {
-  position: relative;
-  z-index: 10;
-  max-width: 1150px;
-  margin: auto;
-  padding: 9.6rem;
-  overflow: hidden;
-}
-
-@media (max-width: 768px) {
-  .section-wrapper {
-    padding: 7.2rem 2.4rem;
-  }
-}
-
-.chip {
-  font-size: var(--text-xs);
-  background: var(--background-light);
-  padding: 0.2rem 0.8rem;
-  border-radius: 999px;
-} */
 
 @keyframes float-square {
   0% {
@@ -118,6 +89,17 @@ a {
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
+
+    --border-400: #EDEDED;
+    --background2: #FAFAFA;
+    --background3: #EBEBEB;
+    --background4: #000000;
+    --foreground2: #171717;
+    --foreground3: #666666; 
+    --foreground4: #666666;
+    --foreground5: #000000;
+    --foreground6: #FAFAFA;
+    --cross: #A8A8A8;
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -144,6 +126,17 @@ a {
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+
+    --border-400: #242424; /* for the grid lines  */
+    --background2: #000000; /* webpages background  */
+    --background3: #1F1F1F; /* header button bg */
+    --background4: #FFFFFF; /* bg for social btns */
+    --foreground2: #EDEDED; /* webpages text folor */
+    --foreground3: #A1A1A1; /* header button text and secondary wabpage color */
+    --foreground4: #888888; /* footer links text color */
+    --foreground5: #FFFFFF; /* footer links hover text color */
+    --foreground6: #000000; /* color for social btns */
+    --cross: #878787; /* background for cross */
   }
 }
 

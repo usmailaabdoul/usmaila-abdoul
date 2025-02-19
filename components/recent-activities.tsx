@@ -3,6 +3,7 @@ import Box from './ui/box'
 import Link from 'next/link'
 import { ActivityProp, PlatformNameProps, RECENT_ACTIVITIES } from '@/constants'
 import { FaGithub, FaLinkedin, FaXTwitter, FaInstagram } from 'react-icons/fa6'
+import { cn } from '@/lib/utils'
 
 export default function RecentActivities() {
   return (
@@ -72,7 +73,7 @@ const ActivityCard = ({
             role="list" 
             className="text-xs flex justify-between"
           >
-            <div className={`bg-[${platform.color}] text-white px-2 py-1 rounded-full flex w-fit items-center gap-1`}>
+            <div className={cn(`bg-[${platform.color}] text-white px-2 py-1 rounded-full flex w-fit items-center gap-1`)}>
               <span>{platform.name}</span>
               {getIcon(platform.name)}
             </div>

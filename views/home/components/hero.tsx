@@ -32,11 +32,11 @@ export default function Hero() {
               }} />
           </div>
 
-          <h1 className="text-5xl font-bold text-white mb-8 relative z-10 max-w-3xl text-center">
+          <h1 className="text-5xl font-bold mb-8 relative z-10 max-w-3xl text-center">
             Hi, I&apos;m Usmaila Abdoul
           </h1>
           
-          <p className="text-gray-300 text-xl mb-12 max-w-2xl mx-auto text-center relative z-10 px-8">
+          <p className="dark:text-gray-300 text-xl mb-12 max-w-2xl mx-auto text-center relative z-10 px-8">
             A Software Engineer<br/>
             With more than 4 years of experience, i am passionate about building web and mobile applications. I love the challenge of taking an idea and turning it into a working product that people can use.
           </p>

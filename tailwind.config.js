@@ -16,8 +16,20 @@ module.exports = {
   		},
   		colors: {
 				brand: 'var(--brand)',
-  			background: 'hsl(var(--background))',
-  			foreground: 'hsl(var(--foreground))',
+  			background: {
+					DEFAULT: 'hsl(var(--background))',
+					'2': 'var(--background2)',
+					'3': 'var(--background3)',
+					'4': 'var(--background4)',
+				},
+  			foreground: {
+					DEFAULT: 'hsl(var(--foreground))',
+					'2': 'var(--foreground2)',
+					'3': 'var(--foreground3)',
+					'4': 'var(--foreground4)',
+					'5': 'var(--foreground5)',
+					'6': 'var(--foreground6)',
+				},
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
@@ -46,7 +58,10 @@ module.exports = {
   				DEFAULT: 'hsl(var(--destructive))',
   				foreground: 'hsl(var(--destructive-foreground))'
   			},
-  			border: 'hsl(var(--border))',
+  			border: {
+					DEFAULT: 'hsl(var(--border))',
+					'2': 'var(--border-400)'
+				},
   			input: 'hsl(var(--input))',
   			ring: 'hsl(var(--ring))',
   			chart: {
@@ -55,7 +70,9 @@ module.exports = {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
-  			}
+  			},
+
+				cross: 'var(--cross)'
   		}
   	}
   },

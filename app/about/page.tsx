@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button'
 import { FaGithub, FaGoogle, FaLinkedin, FaXTwitter } from 'react-icons/fa6'
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
+import Socials from '@/components/socials'
 
 const boxAtEdges = [9, 19, 29, 39];
 
@@ -40,20 +41,7 @@ export default function page() {
           })}
           <div className='absolute top-[50.5%] left-[50.25%] transform -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center'>
             <h1 className="text-5xl">About</h1>
-            <div className="flex gap-4 justify-center mt-4 relative z-10">
-              <Link href="https://www.linkedin.com/in/usmaila-abdoul" target="_blank" rel="nofollow" className='h-full'>
-                <Button variant='secondary' size='icon' className='rounded-full [&_svg]:size-5'><FaLinkedin /></Button>
-              </Link>
-              <Link href="https://x.com/Abdoul_usma_ila" target="_blank" rel="nofollow" className='h-full'>
-                <Button variant='secondary' size='icon' className='rounded-full [&_svg]:size-5'><FaXTwitter /></Button>
-              </Link>
-              <Link href="https://www.github.com/usmailaabdoul" target="_blank" rel="nofollow" className='h-full'>
-                <Button variant='secondary' size='icon' className='rounded-full [&_svg]:size-5'><FaGithub /></Button>
-              </Link>
-              <Link href="/about" className='h-full'>
-                <Button variant='secondary' size='icon' className='rounded-full [&_svg]:size-5'><FaGoogle /></Button>
-              </Link>
-            </div>
+            <Socials className='mt-4' />
           </div>
         </Box>
         <Box className='border-t-0 flex-row'>
@@ -73,20 +61,20 @@ export default function page() {
             <Box className='p-4'>
               <h2 className='text-xl mb-2'>Skills</h2>
               <ul className='flex flex-wrap flex-shrink gap-2'>
-                <li className='bg-white text-black px-2 rounded-full'>React</li>
-                <li className='bg-white text-black px-2 rounded-full'>React Native</li>
-                <li className='bg-white text-black px-2 rounded-full'>TailwindCSS</li>
-                <li className='bg-white text-black px-2 rounded-full'>Node.JS</li>
-                <li className='bg-white text-black px-2 rounded-full'>PostgreSQL</li>
-                <li className='bg-white text-black px-2 rounded-full'>MongoDB</li>
-                <li className='bg-white text-black px-2 rounded-full'>TypeScript</li>
-                <li className='bg-white text-black px-2 rounded-full'>GitHub</li>
+                <li className='bg-background-4 text-foreground-6 px-2 rounded-full'>React</li>
+                <li className='bg-background-4 text-foreground-6 px-2 rounded-full'>React Native</li>
+                <li className='bg-background-4 text-foreground-6 px-2 rounded-full'>TailwindCSS</li>
+                <li className='bg-background-4 text-foreground-6 px-2 rounded-full'>Node.JS</li>
+                <li className='bg-background-4 text-foreground-6 px-2 rounded-full'>PostgreSQL</li>
+                <li className='bg-background-4 text-foreground-6 px-2 rounded-full'>MongoDB</li>
+                <li className='bg-background-4 text-foreground-6 px-2 rounded-full'>TypeScript</li>
+                <li className='bg-background-4 text-foreground-6 px-2 rounded-full'>GitHub</li>
               </ul>
 
               <h2 className='text-xl mt-4 mb-2'>Interests</h2>
               <ul className='flex flex-wrap flex-shrink gap-2'>
-                <li className='bg-white text-black px-2 rounded-full'>Swift</li>
-                <li className='bg-white text-black px-2 rounded-full'>IOS</li>
+                <li className='bg-background-4 text-foreground-6 px-2 rounded-full'>Swift</li>
+                <li className='bg-background-4 text-foreground-6 px-2 rounded-full'>IOS</li>
               </ul>
             </Box>
           </Box>
