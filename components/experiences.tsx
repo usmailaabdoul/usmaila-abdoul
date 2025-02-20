@@ -23,7 +23,7 @@ export default function Experiences({ className }: {className?: string}) {
                         <div className="w-2 h-2 rounded-full bg-brand"/>
                       </div>
                     </time>
-                    <time className="gap-5 items-center w-max bg-background-4 px-3 py-1 rounded-full" dateTime={experience.startDate}>
+                    <time className="flex md:hidden gap-5 items-center w-max bg-background-4 px-3 py-1 rounded-full" dateTime={experience.startDate}>
                       <span className="text-foreground-6 text-sm">{experience.startDate} - {experience.endDate}</span>
                     </time>
                     <div className="flex md:flex-row flex-col gap-1 justify-between md:items-center">
