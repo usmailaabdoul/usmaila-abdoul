@@ -17,26 +17,26 @@ export default function Box({
     )}>
       {crossPosition?.includes('top-left') && (
         <div className="w-fit h-fit absolute z-[2] inset-[-11.5px]">
-          <div className="w-[11.5px] h-[21px] absolute border-r border-cross"/>
-          <div className="h-[11.5px] w-[21px] absolute border-b border-cross"/>
+          <div className="w-[11px] md:h-[21px] h-[18px] absolute border-r border-cross md:bottom-auto bottom-[calc(100%_-_19.5px)]"/>
+          <div className="h-[11px] md:w-[21px] w-[18px] absolute border-b border-cross md:right-auto right-[calc(100%_-_19.5px)]"/>
         </div>
       )}
       {crossPosition?.includes('top-right') && (
-        <div className="w-fit h-fit absolute left-[calc(100%_-_10.5px)] z-[2] inset-[-11.5px]">
-          <div className="w-[11.5px] h-[21px] absolute border-r border-cross"/>
-          <div className="h-[11.5px] w-[21px] absolute border-b border-cross"/>
+        <div className="w-fit h-fit absolute left-[calc(100%_-_10px)] z-[2] inset-[-11.5px]">
+          <div className="w-[11px] md:h-[21px] h-[18px] absolute border-r border-cross md:bottom-auto bottom-[calc(100%_-_19.5px)]"/>
+          <div className="h-[11.5px] md:w-[21px] w-[18px] absolute border-b border-cross md:right-auto right-[calc(100%_-_19.5px)]"/>
         </div>
       )}
       {crossPosition?.includes('bottom-left') && (
-      <div className="w-fit h-fit absolute top-[calc(100%_-_10.5px)] z-[2] inset-[-11.5px]">
-        <div className="w-[11.5px] h-[21px] absolute border-r border-cross"/>
-        <div className="h-[11.5px] w-[21px] absolute border-b border-cross"/>
+      <div className="w-fit h-fit absolute top-[calc(100%_-_10px)] z-[2] inset-[-11px]">
+        <div className="w-[11px] md:h-[21px] h-[18px] absolute border-r border-cross md:bottom-auto bottom-[calc(100%_-_19.5px)]"/>
+        <div className="h-[11.5px] md:w-[21px] w-[18px] absolute border-b border-cross md:right-auto right-[calc(100%_-_19.5px)]"/>
       </div>
       )}
       {crossPosition?.includes('bottom-right') && (
-        <div className="w-fit h-fit absolute top-[calc(100%_-_10.5px)] left-[calc(100%_-_10.5px)] z-[2] inset-[-11.5px]">
-          <div className="w-[11.5px] h-[21px] absolute border-r border-cross"/>
-          <div className="h-[11.5px] w-[21px] absolute border-b border-cross"/>
+        <div className="w-fit h-fit absolute top-[calc(100%_-_10px)] left-[calc(100%_-_10px)] z-[2] inset-[-11.5px]">
+          <div className="w-[11px] md:h-[21px] h-[18px] absolute border-r border-cross md:bottom-auto bottom-[calc(100%_-_19.5px)]"/>
+          <div className="h-[11.5px]  md:w-[21px] w-[18px] absolute border-b border-cross md:right-auto right-[calc(100%_-_19.5px)]"/>
         </div>
       )}
       {children}

@@ -49,7 +49,7 @@ export const EXPERIENCES = [
   },
 ]
 
-export type PlatformNameProps = 'linkedIn' | 'twitter' | 'github' | 'instagram';
+export type PlatformProp = 'linkedIn' | 'twitter' | 'github' | 'instagram';
 
 export interface ActivityProp {
   id: number;
@@ -61,11 +61,6 @@ export interface ActivityProp {
   link: string;
 }
 
-interface PlatformProp {
-  name: PlatformNameProps,
-  color: string,
-}
-
 export const RECENT_ACTIVITIES: ActivityProp[] = [
   {
     id: 1,
@@ -73,10 +68,7 @@ export const RECENT_ACTIVITIES: ActivityProp[] = [
     image: '/recent-activities/activity-1.png',
     description: '',
     date: '11/02/2025',
-    platform: {
-      name: 'linkedIn',
-      color: '#0a66c2',
-    },
+    platform: 'linkedIn',
     link: 'https://www.linkedin.com/posts/usmaila-abdoul_ai-automation-openai-activity-7295067724425166848-veIR?utm_source=share&utm_medium=member_desktop&rcm=ACoAACtRkxkBIc-Zu4LE3oUaHJMi2PyzTdYszsQ'
   }
 ]

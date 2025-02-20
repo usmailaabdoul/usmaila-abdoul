@@ -72,7 +72,9 @@ module.exports = {
   				'5': 'hsl(var(--chart-5))'
   			},
 
-				cross: 'var(--cross)'
+				cross: 'var(--cross)',
+
+				linkedIn: '#0a66c2'
   		}
   	}
   },

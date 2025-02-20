@@ -1,18 +1,18 @@
 import Image from 'next/image'
 import Box from './ui/box'
 import Link from 'next/link'
-import { ActivityProp, PlatformNameProps, RECENT_ACTIVITIES } from '@/constants'
+import { ActivityProp, PlatformProp, RECENT_ACTIVITIES } from '@/constants'
 import { FaGithub, FaLinkedin, FaXTwitter, FaInstagram } from 'react-icons/fa6'
 import { cn } from '@/lib/utils'
 
 export default function RecentActivities() {
   return (
     <>
-      <Box crossPosition={['top-left']} className="w-full flex-row">
-        <Box className="p-10 w-1/3 border-t-0 border-b-0 border-l-0 border-r-0">
+      <Box crossPosition={['top-left']} className="w-full md:flex-row flex-col">
+        <Box className="md:p-10 p-5 md:w-1/3 w-full border-t-0 md:border-b-0 border-l-0 border-r-0">
           <h2 className="text-4xl">Recent Activity</h2>
         </Box>
-        <Box className="p-10 w-2/3 border-t-0 border-b-0 border-r-0 gap-5 flex-wrap flex-row">
+        <Box className="md:p-10 p-5 md:w-2/3 w-full border-t-0 border-b-0 border-r-0 md:border-l border-l-0 gap-5 flex-wrap flex-row">
           {RECENT_ACTIVITIES.map((activity) => {
             return (
               <ActivityCard key={activity.id} {...activity} />
@@ -32,7 +32,7 @@ const ActivityCard = ({
   link
 }: ActivityProp ) => {
   return (
-    <Box className="flex w-[calc(33.33%_-_13.33px)] h-52 border-0">
+    <Box className="flex md:w-[calc(33.33%_-_13.33px)] w-full h-52 border-0">
       <Link
         prefetch
         href={link}
@@ -73,9 +73,9 @@ const ActivityCard = ({
             role="list" 
             className="text-xs flex justify-between"
           >
-            <div className={cn(`bg-[${platform.color}] text-white px-2 py-1 rounded-full flex w-fit items-center gap-1`)}>
-              <span>{platform.name}</span>
-              {getIcon(platform.name)}
+            <div className={cn(`bg-${platform} text-white px-2 py-1 rounded-full flex w-fit items-center gap-1`)}>
+              <span>{platform}</span>
+              {getIcon(platform)}
             </div>
             <div className={`text-white px-2 rounded-full flex w-fit items-center gap-1`}>
               <span>{date}</span>
@@ -88,7 +88,7 @@ const ActivityCard = ({
 }
 
 
-export const getIcon = (platform: PlatformNameProps ) => {
+export const getIcon = (platform: PlatformProp ) => {
   if (platform == 'linkedIn') return <FaLinkedin />
   if (platform == 'twitter') return <FaXTwitter />
   if (platform == 'github') return <FaGithub />

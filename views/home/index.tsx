@@ -1,12 +1,6 @@
-import Link from "next/link";
-import Header from "@/components/header";
 import Box from "@/components/ui/box";
-import { Button } from "@/components/ui/button";
 import Container from "@/components/ui/container";
-import { FaGithub, FaLinkedin, FaXTwitter, FaGoogle, FaFileArrowDown } from "react-icons/fa6";
 import Footer from "@/components/footer";
-import { cn } from "@/lib/utils";
-import { EXPERIENCES } from "@/constants";
 import Experiences from "@/components/experiences";
 import RecentActivities from "@/components/recent-activities";
 import Hero from "./components/hero";

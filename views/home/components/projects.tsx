@@ -8,19 +8,19 @@ export default function Projects() {
   return (
     <>
       <Box className="h-fit grid md:grid-cols-3 grid-cols-1">
-        <Box className="col-span-1 row-span-1 md:block hidden border-t-0 border-l-0 border-b-0 p-10">
+        <Box className="col-span-1 row-span-1 border-t-0 border-l-0 md:border-b-0 md:border-r-[1.5px] border-r-0 md:p-10 p-5">
           <div className="w-1/3">
             <h2 className="text-4xl">Projects</h2>
           </div>
         </Box>
-        <Box className="relative md:col-[2_/_4] col-span-1 py-10 pr-10 gap-10 border-0 grid grid-cols-2">
-          <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 h-full border-[1.5px] border-t-0 border-l-0 border-b-0 border-border-2"/>
+        <Box className="relative md:col-[2_/_4] col-span-1 md:p-0 p-5 md:py-10 md:pr-10 gap-10 border-0 grid md:grid-cols-2 grid-cols-1">
+          <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 h-full border-[1.5px] border-t-0 border-l-0 border-b-0 border-border-2 md:border-solid border-dashed"/>
           {PROJECTS.map((project) => (
             <ProjectCard key={project.id} {...project} />
           ))}
-          <Box className="flex h-52 p-5 inset-x-10">Project 1</Box>
-          <Box className="flex h-52 p-5 inset-x-10">Project 2</Box>
-          <Box className="flex h-52 p-5 inset-x-10">Project 3</Box>
+          <Box className="flex h-52 p-5 md:inset-x-10">Project 1</Box>
+          <Box className="flex h-52 p-5 md:inset-x-10">Project 2</Box>
+          <Box className="flex h-52 p-5 md:inset-x-10">Project 3</Box>
         </Box>
       </Box>
     </>
@@ -35,7 +35,7 @@ const ProjectCard = ({
   techStack
 }: ProjectProp) => {
   return (
-    <Box className="flex min-h-56 p-5 inset-x-10">
+    <Box className="flex min-h-56 p-5 md:inset-x-10">
       <Link
         prefetch
         href={link}
