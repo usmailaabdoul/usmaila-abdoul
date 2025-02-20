@@ -2,20 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: 0 0% 3.9%;
-  --foreground: 0 0% 98%;
-
-  --background: rgb(0, 0, 0);
-  --bg-opaque: rgb(17, 17, 17, 0.25);
-  --background-light: rgb(35, 35, 35);
-  --background-dark: rgb(8, 8, 8);
-
-  --text: #EDEDED;
-  --brand: rgb(10, 255, 157);
-
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -31,7 +17,6 @@ html,
 body {
   max-width: 100vw;
   scroll-behavior: smooth;
-  font-size: var(--text-sm);
 }
 
 body {
@@ -44,26 +29,11 @@ a {
   text-decoration: none;
 }
 
-@keyframes float-square {
-  0% {
-    transform: translateY(0) rotate(0deg);
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateY(-1000px) rotate(360deg);
-    opacity: 0;
-  }
-}
-
-.animate-float-square {
-  animation: float-square linear infinite;
-}
-
 @layer base {
   :root {
+    --text: #EDEDED;
+    --brand: rgb(10, 255, 157);
+
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
