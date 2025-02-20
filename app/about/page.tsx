@@ -46,7 +46,7 @@ export default function page() {
         </Box>
         <Box className='border-t-0 md:flex-row flex-col'>
           <Box className='flex-col md:p-10 p-5 border-t-0 md:border-b-0 border-l-0 md:border-r-[1.5px] border-r-0'>
-            <div className="relative md:w-64 w-full h-64">
+            <div className="relative md:w-72 w-full h-64">
               <div className="absolute inset-0 backdrop-blur-sm overflow-hidden">
                 <Image 
                   src="/usmaila.png" 
@@ -79,18 +79,21 @@ export default function page() {
             </Box>
           </Box>
           <Box className='flex-col gap-4 md:p-10 p-5 border-t-0 border-b-0 border-l-0 border-r-0'>
-            <p className='md:text-lg text-base'>
-              Hi there! I&apos;m Usmaila Abdoul, a Full Stack Engineer with 4+ years of experience who&apos;s passionate about building web and mobile applications. I love the challenge of taking an idea and turning it into a working product that people can use.
-            </p>
-            <p className='md:text-lg text-base'>
-              I love building high-quality applications that meet client & customer expectations that are built to last. I have experience in a variety of industries, and I&apos;m always looking for new challenges and opportunities to grow. As a team player, I enjoy collaborating with others to find creative solutions to complex problems. I&apos;m also a quick learner and enjoy staying up-to-date with the latest trends and technologies in the industry.
-            </p>
-            <p className='md:text-lg text-base'>
-              When I&apos;m not coding, you can find me volunteering for local community initiatives, and staying active with outdoor activities. I&apos;m based in Buea, Southwest, Cameroon, but I&apos;m open to working remotely or relocating for the right opportunity.
-            </p>
-            <p className='md:text-lg text-base'>
-              If you&apos;re looking for a dedicated and skilled Full Stack Engineer who&apos;s passionate about delivering high-quality products, feel free to connect with me on LinkedIn or send me an email. I&apos;d love to hear from you!
-            </p>
+            <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 h-full border-[1.5px] border-t-0 border-l-0 border-b-0 border-border-2 border-dashed"/>
+            <div className='z-10'>
+              <p className='md:text-lg text-base'>
+                Hi there! I&apos;m Usmaila Abdoul, a Full Stack Engineer with 4+ years of experience who&apos;s passionate about building web and mobile applications. I love the challenge of taking an idea and turning it into a working product that people can use.
+              </p>
+              <p className='md:text-lg text-base'>
+                I love building high-quality applications that meet client & customer expectations that are built to last. I have experience in a variety of industries, and I&apos;m always looking for new challenges and opportunities to grow. As a team player, I enjoy collaborating with others to find creative solutions to complex problems. I&apos;m also a quick learner and enjoy staying up-to-date with the latest trends and technologies in the industry.
+              </p>
+              <p className='md:text-lg text-base'>
+                When I&apos;m not coding, you can find me volunteering for local community initiatives, and staying active with outdoor activities. I&apos;m based in Buea, Southwest, Cameroon, but I&apos;m open to working remotely or relocating for the right opportunity.
+              </p>
+              <p className='md:text-lg text-base'>
+                If you&apos;re looking for a dedicated and skilled Full Stack Engineer who&apos;s passionate about delivering high-quality products, feel free to connect with me on LinkedIn or send me an email. I&apos;d love to hear from you!
+              </p>
+            </div>
           </Box>
         </Box>
         
