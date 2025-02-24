@@ -18,9 +18,6 @@ export default function Projects() {
           {PROJECTS.map((project) => (
             <ProjectCard key={project.id} {...project} />
           ))}
-          <Box className="flex h-52 p-5 md:inset-x-10">Project 1</Box>
-          <Box className="flex h-52 p-5 md:inset-x-10">Project 2</Box>
-          <Box className="flex h-52 p-5 md:inset-x-10">Project 3</Box>
         </Box>
       </Box>
     </>
