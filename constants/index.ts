@@ -98,11 +98,41 @@ export const PROJECTS: ProjectProp[] = [
   {
     id: 2,
     title: 'Intelli VIN (POC)',
-    featuredImage: '/recent-activities/activity-1.png',
-    images: ['/recent-activities/activity-1.png'],
+    featuredImage: '/project-imgs/project-2.png',
+    images: ['/project-imgs/project-2.png'],
     description: '',
     techStack: ['OpenAI APIs', 'Next.js', 'PostgreSQL', 'Prisma', 'Tailwind CSS', 'TypeScript'],
     date: '12/2024',
     link: ''
+  },
+  {
+    id: 3,
+    title: 'Buea Regional Mosque',
+    featuredImage: '/project-imgs/project-3.png',
+    images: ['/project-imgs/project-3.png'],
+    description: '',
+    techStack: ['Next.js', 'Tailwind CSS', 'TypeScript'],
+    date: '01/2025',
+    link: 'https://buea-regional-mosque.vercel.app/'
+  },
+  {
+    id: 4,
+    title: 'Xceed',
+    featuredImage: '/project-imgs/project-4.png',
+    images: ['/project-imgs/project-4.png'],
+    description: '',
+    techStack: ['Next.js', 'Tailwind CSS', 'TypeScript'],
+    date: '01/2025',
+    link: 'https://xceed-frontend-assessment.vercel.app/'
+  },
+  {
+    id: 5,
+    title: 'Matchable',
+    featuredImage: '/project-imgs/project-5.png',
+    images: ['/project-imgs/project-5.png'],
+    description: '',
+    techStack: ['Next.js', 'Shadcn/ui' ,'Tailwind CSS', 'TypeScript'],
+    date: '01/2025',
+    link: 'https://matchable-ui.vercel.app/'
   },
 ]
