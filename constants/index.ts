@@ -103,7 +103,7 @@ export const PROJECTS: ProjectProp[] = [
     description: '',
     techStack: ['OpenAI APIs', 'Next.js', 'PostgreSQL', 'Prisma', 'Tailwind CSS', 'TypeScript'],
     date: '12/2024',
-    link: ''
+    link: 'https://www.linkedin.com/posts/usmaila-abdoul_ai-automation-openai-activity-7295067724425166848-veIR?utm_source=share&utm_medium=member_desktop&rcm=ACoAACtRkxkBIc-Zu4LE3oUaHJMi2PyzTdYszsQ'
   },
   {
     id: 3,
