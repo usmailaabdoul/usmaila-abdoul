@@ -32,7 +32,7 @@ export default function Socials({ className }: { className?: string }) {
             )}
           ><FaGithub /></Button>
         </Link>
-        <Link href="/about" className='h-full'>
+        <Link href='mailto:ismaelabdul77@gmail.com'>
           <Button variant='secondary' size='icon' 
             className={cn(
               'rounded-full [&_svg]:size-5',
