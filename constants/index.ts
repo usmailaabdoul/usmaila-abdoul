@@ -87,10 +87,10 @@ export interface ProjectProp {
 export const PROJECTS: ProjectProp[] = [
   {
     id: 1,
-    title: 'Touch of Grace - Business Website',
+    title: 'Touch of Grace (ToG) - Business Website',
     featuredImage: '/project-imgs/project-1.png',
     images: ['/project-imgs/project-1.png'],
-    description: '',
+    description: 'Built to showcase of the businesses services, reward programs, with a built in CMS integration to track all request quotes. It is highly optimized for great SEO perfomance and mobile responsiveness',
     techStack: ['Next.js', 'React.js', 'Tailwind CSS', 'TypeScript'],
     date: '10/2024',
     link: 'https://touchofgracecleaningservices.com/'
@@ -100,7 +100,7 @@ export const PROJECTS: ProjectProp[] = [
     title: 'Intelli VIN (POC)',
     featuredImage: '/project-imgs/project-2.png',
     images: ['/project-imgs/project-2.png'],
-    description: '',
+    description: "This platform aims to simplify and streamline car dealerships' data workflow by automating their processes. The app leverages OpenAI APIs to extract key information (e.g. VIN, make, and model) from PDFs and performs targeted web searches for similar car models and specifications. After gathering all this data it selects the most profitable and provides useful insights into prices and profit margins.",
     techStack: ['OpenAI APIs', 'Next.js', 'PostgreSQL', 'Prisma', 'Tailwind CSS', 'TypeScript'],
     date: '12/2024',
     link: 'https://www.linkedin.com/posts/usmaila-abdoul_ai-automation-openai-activity-7295067724425166848-veIR?utm_source=share&utm_medium=member_desktop&rcm=ACoAACtRkxkBIc-Zu4LE3oUaHJMi2PyzTdYszsQ'

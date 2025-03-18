@@ -8,6 +8,8 @@ import { FaGithub, FaGoogle, FaLinkedin, FaXTwitter } from 'react-icons/fa6'
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import Socials from '@/components/socials'
+import { ProjectProp, PROJECTS } from '@/constants';
+import { Link as LinkIcon } from 'lucide-react';
 
 const boxAtEdges = [9, 19, 29, 39];
 
@@ -43,8 +45,62 @@ export default function page() {
             <h1 className="md:text-5xl text-4xl">Projects</h1>
           </div>
         </Box>
-        <Box className='border-t-0 md:flex-row flex-col h-80 justify-center items-center'>
-          <div className='md:text-4xl text-3xl'>Coming soon!</div>
+        <Box crossPosition={['bottom-left']} className="p-5 border-t-0"><div/></Box>
+        <Box className='border-t-0 grid grid-cols-3 grid-auto-rows min-h-full'>
+          {PROJECTS.map((project, i) => {
+            const row = Math.floor(i / 3);
+            const col = i % 3;
+
+            const isEdge = col == 2;
+            const isLastRow = (row * 3) >= (PROJECTS.length - 2);
+
+            return (
+              <Link
+                key={project.id}
+                prefetch
+                href={project.link}
+                target="_blank" 
+                rel="nofollow"
+                className="block w-full group hover:bg-background-3 hover:text-foreground-2 transition-all"
+                aria-label={`View details for ${project.title}`}
+              >
+                <Box 
+                  className={cn(
+                    'p-10 border-t-0 border-l-0 row-span-full h-full',
+                    isEdge && 'border-r-0',
+                    isLastRow && 'border-b-0'
+                  )}
+                >
+                  <Image
+                    width={300}
+                    height={300}
+                    src={project.featuredImage}
+                    // quality={80}
+                    priority
+                    sizes="(max-width: 768px) 50vw, 33vw"
+                    alt={`Cover photo of ${project.title}`}
+                    className="w-full h-[200px] object-cover mb-5"
+                  />
+                  <h3 className="text-xl font-bold mb-4">{project.title}</h3>
+                  <div className='flex items-start justify-between'>
+                    {/* <div className='mr-2 bg-background-4 text-foreground-6 px-3 text-sm rounded-full w-fit'>{project.date}</div> */}
+                    <div className='mr-2 bg-background-4 text-foreground-6 px-2 text-sm rounded-full w-fit flex items-center gap-1'><LinkIcon size={14} /> link</div>
+                    <ul className='flex flex-wrap justify-end'>
+                      {project.techStack.map((stack, i) => (
+                        <li key={stack} className='w-fit text-xs'>
+                          <span>{stack}</span>
+                          {i != (project.techStack.length-1) && (
+                            <span aria-hidden="true" className="mx-1">•</span>
+                          )}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  {project.description && <p className='mt-4 text-foreground-3'>{project.description}</p>}
+                </Box>
+              </Link>
+            )}
+          )}
         </Box>
         
         <Footer />
