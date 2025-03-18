@@ -90,9 +90,9 @@ export default function Header() {
                 <Link href="/about" className='h-full w-full'>
                   <Button onClick={toggleMenu} variant='ghost' className='px-0 justify-start w-full h-full rounded-none'>About</Button>
                 </Link>
-                <Link href="/articles" className='h-full w-full'>
+                {/* <Link href="/articles" className='h-full w-full'>
                   <Button onClick={toggleMenu} variant='ghost' className='px-0 justify-start w-full h-full rounded-none'>Articles</Button>
-                </Link>
+                </Link> */}
                 <Link href="/projects" className='h-full'>
                   <Button onClick={toggleMenu} variant='ghost' className='px-0 justify-start w-full h-full rounded-none'>Projects</Button>
                 </Link>

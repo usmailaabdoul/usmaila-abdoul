@@ -46,13 +46,14 @@ export default function page() {
           </div>
         </Box>
         <Box crossPosition={['bottom-left']} className="p-5 border-t-0"><div/></Box>
-        <Box className='border-t-0 grid grid-cols-3 grid-auto-rows min-h-full'>
+        <Box className='border-t-0 grid md:grid-cols-3 grid-cols-1 grid-auto-rows min-h-full'>
           {PROJECTS.map((project, i) => {
             const row = Math.floor(i / 3);
             const col = i % 3;
 
             const isEdge = col == 2;
             const isLastRow = (row * 3) >= (PROJECTS.length - 2);
+            const isLast = (i === PROJECTS.length -1)
 
             return (
               <Link
@@ -66,9 +67,10 @@ export default function page() {
               >
                 <Box 
                   className={cn(
-                    'p-10 border-t-0 border-l-0 row-span-full h-full',
+                    'md:p-10 px-5 py-10 border-t-0 border-l-0 row-span-full h-full md:border-r-[1.5px] border-r-0',
                     isEdge && 'border-r-0',
-                    isLastRow && 'border-b-0'
+                    isLastRow && 'md:border-b-0 border-b-[1.5px]',
+                    isLast && 'border-b-0'
                   )}
                 >
                   <Image
