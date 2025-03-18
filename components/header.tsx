@@ -44,12 +44,12 @@ export default function Header() {
                   pathname == '/about' && 'bg-background-3 text-foreground-2'
                 )}>About</Button>
               </Link>
-              <Link href="/articles" className='h-full'>
+              {/* <Link href="/articles" className='h-full'>
                 <Button variant='ghost' className={cn(
                   'min-w-32 h-full border-r border-border-2 rounded-none',
                   pathname == '/articles' && 'bg-background-3 text-foreground-2'
                 )}>Articles</Button>
-              </Link>
+              </Link> */}
               <Link href="/projects" className='h-full'>
                 <Button variant='ghost' className={cn(
                   'min-w-32 h-full border-r border-border-2 rounded-none',

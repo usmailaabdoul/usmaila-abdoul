@@ -18,9 +18,9 @@ export default function Footer() {
           <Link href='/about'>
             <Button variant='link'>About</Button>
           </Link>
-          <Link href='/articles'>
+          {/* <Link href='/articles'>
             <Button variant='link'>Articles</Button>
-          </Link>
+          </Link> */}
           <Link href='/projects'>
             <Button variant='link'>Projects</Button>
           </Link>
