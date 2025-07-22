@@ -77,8 +77,8 @@ module.exports = {
 				linkedIn: '#0a66c2'
   		},
 			fontFamily: {
-				'inter': ['__Inter_d65c78', '__Inter_Fallback_d65c78'],
-				'spaceGrotesk': ['__Space_Grotesk_bc0dcf', '__Space_Grotesk_Fallback_bc0dcf']
+				'inter': ["var(--font-inter)"],
+				'spaceGrotesk': ["var(--font-space)"]
 			}
   	}
   },
