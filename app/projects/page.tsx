@@ -86,8 +86,8 @@ export default function page() {
                   <h3 className="text-xl font-bold mb-4">{project.title}</h3>
                   <div className='flex items-start justify-between'>
                     {/* <div className='mr-2 bg-background-4 text-foreground-6 px-3 text-sm rounded-full w-fit'>{project.date}</div> */}
-                    <div className='mr-2 bg-background-4 text-foreground-6 px-2 text-sm rounded-full w-fit flex items-center gap-1'><LinkIcon size={14} /> link</div>
-                    <ul className='flex flex-wrap justify-end'>
+                    <div className='mr-2 bg-background-4 text-foreground-6 px-2 text-xs rounded-full w-fit flex items-center gap-1 font-inter'><LinkIcon size={12} /> link</div>
+                    <ul className='flex flex-wrap justify-end font-inter'>
                       {project.techStack.map((stack, i) => (
                         <li key={stack} className='w-fit text-xs'>
                           <span>{stack}</span>
@@ -98,7 +98,7 @@ export default function page() {
                       ))}
                     </ul>
                   </div>
-                  {project.description && <p className='mt-4 text-foreground-3'>{project.description}</p>}
+                  {project.description && <p className='mt-4 text-foreground-3 font-inter'>{project.description}</p>}
                 </Box>
               </Link>
             )}

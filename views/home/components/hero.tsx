@@ -11,9 +11,9 @@ export default function Hero() {
           <h1 className="text-2xl font-bold mb-4 relative z-10 text-center">
             Hi, I&apos;m Usmaila Abdoul
           </h1>
-          <p className="text-foreground-3 font-light text-lg text-center">
+          <p className="text-foreground-3 font-light text-lg text-center font-inter">
             A Software Engineer<br/>
-            With more than 4 years of experience, i am passionate about building web and mobile applications. I love the challenge of taking an idea and turning it into a working product that people can use.
+            With more than 4+ years of experience, i am passionate about building web and mobile applications. I love the challenge of taking an idea and turning it into a working product that people can use.
           </p>
           <Socials />
         </Box>
@@ -82,9 +82,9 @@ export default function Hero() {
             Hi, I&apos;m Usmaila Abdoul
           </h1>
           
-          <p className="dark:text-gray-300 text-xl text-center px-5 mb-8">
+          <p className="dark:text-gray-300 text-xl text-center px-5 mb-8 font-inter">
             A Software Engineer<br/>
-            With more than 4 years of experience, i am passionate about building web and mobile applications. I love the challenge of taking an idea and turning it into a working product that people can use.
+            With more than 4+ years of experience, i am passionate about building web and mobile applications. I love the challenge of taking an idea and turning it into a working product that people can use.
           </p>
           
           <div className="relative w-60 h-60">

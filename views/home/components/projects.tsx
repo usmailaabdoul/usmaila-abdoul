@@ -71,7 +71,7 @@ const ProjectCard = ({
           <h3 className="text-xl font-bold truncate">{title}</h3>
           <div 
             role="list" 
-            className="text-xs opacity-75"
+            className="text-xs opacity-75 font-inter"
           >
             {techStack?.map((stack, index) => (
               <span 

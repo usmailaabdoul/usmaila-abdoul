@@ -45,10 +45,10 @@ export const Contact = () => {
           </div>
         </Reveal>
         <Reveal width="100%">
-          <Link href="mailto:ismaelabdul77@gmail.com">
+          <Link href="mailto:usmaila.abdoul@gmail.com">
             <div className={styles.contactEmail}>
               <AiFillMail size="2.4rem" />
-              <span>ismaelabdul77@gmail.com</span>
+              <span>usmaila.abdoul@gmail.com</span>
             </div>
           </Link>
         </Reveal>
