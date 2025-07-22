@@ -21,7 +21,7 @@ export default function Contact() {
 
         <div className='absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 w-full px-5'>
           <h2 className="md:text-5xl text-4xl pb-4 text-center">Contacts</h2>
-          <p className="text-center font-sans">
+          <p className="text-center ">
             Shoot me an email if you want to connect! You can also find me on{" "}
             <Link
               href="https://www.linkedin.com/in/usmaila-abdoul"

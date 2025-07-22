@@ -28,14 +28,14 @@ export default function Experiences({ className }: {className?: string}) {
                     </time>
                     <div className="flex md:flex-row flex-col gap-1 justify-between md:items-center">
                       <h2 className="md:text-3xl text-2xl">{experience.company}</h2>
-                      <span className="md:text-sm text-xs font-medium text-foreground-3 font-sans">{experience.location}</span>
+                      <span className="md:text-sm text-xs font-medium text-foreground-3 ">{experience.location}</span>
                     </div>
                     <div className="flex justify-between items-center">
-                      <h3 className="md:text-xl text-lg text-foreground-3 font-sans">{experience.title}</h3>
+                      <h3 className="md:text-xl text-lg text-foreground-3 ">{experience.title}</h3>
                     </div>
                     <div className="mt-1">
                       <ul 
-                        className="list-disc list-inside flex flex-col gap-2 text-foreground-3/90 font-sans" 
+                        className="list-disc list-inside flex flex-col gap-2 text-foreground-3/90 " 
                         dangerouslySetInnerHTML={{__html: experience.description}}
                       />
                     </div>

@@ -80,7 +80,7 @@ export default function page() {
           </Box>
           <Box className='flex-col gap-4 md:p-10 p-5 border-t-0 border-b-0 border-l-0 border-r-0'>
             <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 h-full border-[1.5px] border-t-0 border-l-0 border-b-0 border-border-2 border-dashed"/>
-            <div className='z-10 font-sans'>
+            <div className='z-10'>
               <p className='md:text-lg text-base '>
                 Hi there! I&apos;m Usmaila Abdoul, a Full Stack Engineer with 4+ years of experience who&apos;s passionate about building web and mobile applications. I love the challenge of taking an idea and turning it into a working product that people can use.
               </p>
