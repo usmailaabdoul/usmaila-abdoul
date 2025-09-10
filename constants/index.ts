@@ -140,16 +140,16 @@ export const PROJECTS: ProjectProp[] = [
     date: '01/2025',
     link: 'https://buea-regional-mosque.vercel.app/'
   },
-  {
-    id: 4,
-    title: 'Xceed',
-    featuredImage: '/project-imgs/project-4.png',
-    images: ['/project-imgs/project-4.png'],
-    description: '',
-    techStack: ['Next.js', 'Tailwind CSS', 'TypeScript'],
-    date: '01/2025',
-    link: 'https://xceed-frontend-assessment.vercel.app/'
-  },
+  // {
+  //   id: 4,
+  //   title: 'Xceed',
+  //   featuredImage: '/project-imgs/project-4.png',
+  //   images: ['/project-imgs/project-4.png'],
+  //   description: '',
+  //   techStack: ['Next.js', 'Tailwind CSS', 'TypeScript'],
+  //   date: '01/2025',
+  //   link: 'https://xceed-frontend-assessment.vercel.app/'
+  // },
   {
     id: 5,
     title: 'Matchable',
