@@ -78,7 +78,7 @@ export const RECENT_ACTIVITIES: ActivityProp[] = [
     link: 'https://www.linkedin.com/posts/usmaila-abdoul_stitch-ai-google-activity-7332348917361111040-4Bh_?utm_source=share&utm_medium=member_desktop&rcm=ACoAACtRkxkBIc-Zu4LE3oUaHJMi2PyzTdYszsQ'
   },
   {
-    id: 2,
+    id: 3,
     title: 'Mock Social Media Post',
     image: '/project-imgs/project-6.png',
     description: '',
