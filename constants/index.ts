@@ -7,7 +7,7 @@ export const EXPERIENCES = [
     location: 'Full Time · San Francisco · Remote',
     description: `
       <li>Led a team of <strong>6 developers</strong> across high-stakes projects (e.g., Hive, Valid, Upnext), reviving underperforming accounts, doubling client credit volume, and increasing overall delivery success by over <strong>50%</strong>.</li>
-      <li>Revamped the Hive project post-client dissatisfaction, restoring confidence in just <strong>2 months</strong>, which resulted in additional project scope and extended engagement until the company pivoted.</li>
+      <li>Revamped the Hive project post-client dissatisfaction, restoring confidence in just <strong>2 months</strong>, which resulted in additional project scope and extended engagement.</li>
       <li>Took over the Valid project, significantly improving collaboration and code velocity — client satisfaction soared, with more complex work assigned and PR volume doubling.</li>
       <li>Delivered SSR-based deep linking features on Upnext, enabling state-sharing via URLs and improving engagement and user retention through faster load times.</li>
       <li>Ensured <strong>75%+</strong> test coverage across all Valid features using React Testing Library and Playwright, strengthening delivery confidence and reducing post-deployment bugs.</li>
