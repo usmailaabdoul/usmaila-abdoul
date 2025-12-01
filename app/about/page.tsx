@@ -61,6 +61,7 @@ export default function page() {
             <Box className='p-4'>
               <h2 className='md:text-xl text-lg mb-2'>Skills</h2>
               <ul className='flex flex-wrap flex-shrink gap-2'>
+                <li className='bg-background-4 text-foreground-6 px-2 text-sm rounded-full'>Next.js</li>
                 <li className='bg-background-4 text-foreground-6 px-2 text-sm rounded-full'>React</li>
                 <li className='bg-background-4 text-foreground-6 px-2 text-sm rounded-full'>React Native</li>
                 <li className='bg-background-4 text-foreground-6 px-2 text-sm rounded-full'>TailwindCSS</li>
@@ -82,7 +83,7 @@ export default function page() {
             <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 h-full border-[1.5px] border-t-0 border-l-0 border-b-0 border-border-2 border-dashed"/>
             <div className='z-10'>
               <p className='md:text-lg text-base '>
-                Hi there! I&apos;m Usmaila Abdoul, a Full Stack Engineer with 4+ years of experience who&apos;s passionate about building web and mobile applications. I love the challenge of taking an idea and turning it into a working product that people can use.
+                Hi there! I&apos;m Usmaila Abdoul, a Full Stack Engineer with 5+ years of experience who&apos;s passionate about building web and mobile applications. I love the challenge of taking an idea and turning it into a working product that people can use.
               </p>
               <br />
               <p className='md:text-lg text-base'>

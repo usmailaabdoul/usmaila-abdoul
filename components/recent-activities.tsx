@@ -13,7 +13,7 @@ export default function RecentActivities() {
           <h2 className="text-4xl">Recent Activity</h2>
         </Box>
         <Box className="md:p-10 p-5 md:w-2/3 w-full border-t-0 border-b-0 border-r-0 md:border-l border-l-0 gap-5 flex-wrap flex-row">
-          {RECENT_ACTIVITIES.reverse().map((activity) => {
+          {RECENT_ACTIVITIES.map((activity) => {
             return (
               <ActivityCard key={activity.id} {...activity} />
             )

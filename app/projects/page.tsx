@@ -98,7 +98,7 @@ export default function page() {
                       ))}
                     </ul>
                   </div>
-                  {project.description && <p className='mt-4 text-foreground-3 '>{project.description}</p>}
+                  {project.description && <p className='mt-4 text-foreground-3'>{project.description}</p>}
                 </Box>
               </Link>
             )}
