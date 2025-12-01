@@ -5,6 +5,7 @@ import "./globals.css";
 import Header from "@/components/header";
 import { Providers } from "@/providers";
 import { cn } from "@/lib/utils";
+import { Analytics } from "@vercel/analytics/next"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Header />
           {children}
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
