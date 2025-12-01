@@ -1,3 +1,4 @@
+import { PostHogProvider } from './posthog';
 import { ThemeProvider } from './theme';
 
 type Props = {
@@ -8,13 +9,15 @@ export const Providers = ({
   children
 }: Props) => {
   return (
-    <ThemeProvider
-      attribute="class"
-      defaultTheme="system"
-      enableSystem
-      disableTransitionOnChange
-    >
-      {children}
-    </ThemeProvider>
+    <PostHogProvider>
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="system"
+        enableSystem
+        disableTransitionOnChange
+      >
+        {children}
+      </ThemeProvider>
+    </PostHogProvider>
   );
 };
