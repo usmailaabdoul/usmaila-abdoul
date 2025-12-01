@@ -34,8 +34,9 @@ export default function Header() {
       <nav className='flex flex-col items-center w-full bg-background-2 border-b border-b-border-2 fixed top-0 sm:top-0 z-20'>
         <div className='max-w-[1180px] h-16 flex flex-col justify-center w-auto'>
           <div className='w-[clamp(250px,100vw,1180px)] flex items-center justify-between h-full md:px-0 px-6'>
-            <Link href='/' onClick={() => isOpen && toggleMenu()}>
+            <Link href='/' onClick={() => isOpen && toggleMenu()} className='flex gap-2'>
               <Frame className="w-6 h-6 text-brand" />
+              <div className='text-brand'>Usmaila</div>
             </Link>
             <div className='border-l border-r border-border-2 h-full md:flex hidden flec-col items-center'>
               <Link href="/about" className='h-full'>
